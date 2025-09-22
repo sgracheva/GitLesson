@@ -31,8 +31,6 @@ public class LoopWhile {
 
         // Вывод результата
         System.out.println("Сумма чисел от " + x + " до " + y + " равна: " + sum);
-
-
     }
 }
 
