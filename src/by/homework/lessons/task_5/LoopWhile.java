@@ -16,9 +16,11 @@ public class LoopWhile {
         // Убедимся, что числа положительные
         while (x <= 0 || y <= 0) {
             System.out.println("Пожалуйста, введите только положительные числа.");
-
+            System.out.println("Введите x");
+            x = in.nextInt();
+            System.out.println("Введите y");
+            y = in.nextInt();
         }
-
         // Определяем меньшее и большее число
         int min = Math.min(x, y);
         int max = Math.max(x, y);
