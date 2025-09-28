@@ -58,9 +58,7 @@ public class Array {
         for (int i = 0; i < massive3.length; i++) {
             System.out.print(massive3[i] + " ");
         }
-
     }
-
                }
 
 
