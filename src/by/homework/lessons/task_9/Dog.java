@@ -1,6 +1,5 @@
 package by.homework.lessons.task_9;
 
-import by.homework.task_9.Animal;
 
 public class Dog extends Animal {
     //  В классе собака определить имя, порода, средний вес. В классе Собака реализовать методы: лаять, кусать, бегать, играть, прыгать.
