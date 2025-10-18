@@ -38,7 +38,7 @@ public class Bird extends Animal {
     @Override
     public String toString() {
         String result = super.toString();
-        result = result + "Семейство: " + familyBird + ", Максимальная высота полёта: " + maxflight + " м. ";
+        result = result + " Семейство: " + familyBird + ", Максимальная высота полёта: " + maxflight + " м. ";
         return result;
 
     }

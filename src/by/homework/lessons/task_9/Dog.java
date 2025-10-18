@@ -50,7 +50,7 @@ public class Dog extends Animal {
     @Override
     public String toString() {
         String result = super.toString();
-        result = result + "Имя: " + name + ", Порода: " + breed + ", Вес: " + weight + " кг";
+        result = result + " Имя: " + name + ", Порода: " + breed + ", Вес: " + weight + " кг";
         return result;
     }
 
