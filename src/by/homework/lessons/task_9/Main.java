@@ -30,6 +30,7 @@ public class Main {
 
         Zoo zoo = new Zoo();
 
+
         // Задание 1.3-1.7
 
         zoo.addAnimal(new Dog("Белла", "Лабрадор", 30, "Белый", 25, "Мясо"));
