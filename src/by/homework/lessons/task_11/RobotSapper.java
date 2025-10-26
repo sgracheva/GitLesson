@@ -6,7 +6,7 @@ public class RobotSapper implements RobotEngener {
 
     private String model;
     private int power;
-    private  String chassisNumber;
+    private String chassisNumber;
     private String material;
     boolean isOn;
 
@@ -20,23 +20,20 @@ public class RobotSapper implements RobotEngener {
 
     @Override
     public void turnOn() {
-        System.out.println(model+ " включен");
-
+        System.out.println(model + " включен");
     }
 
     @Override
     public void turnOff() {
-        System.out.println(model+ " выключен");
-
+        System.out.println(model + " выключен");
     }
 
     @Override
     public void uniquePossibility() {
-        System.out.println(model+ " разминирует мины с помощью шасси № " +chassisNumber+ ".");
-
+        System.out.println(model + " разминирует мины с помощью шасси № " + chassisNumber + ".");
     }
 
-    public void repairRobot(){
+    public void repairRobot() {
         System.out.println("Отремонтировать робота " + model);
     }
 

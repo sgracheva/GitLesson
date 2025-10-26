@@ -35,7 +35,6 @@ public class Main {
         for (RobotEngener engineer: engineerRobots)
             engineer.uniquePossibility();
 
-
         System.out.println("***Демонстрация создания предметов роботами-инженерами:******");
         for (RobotEngener engineer : engineerRobots) {
             engineer.createItem();
@@ -45,9 +44,5 @@ public class Main {
         for (RobotSapper sapper1: sapperRobots){
             sapper1.uniquePossibility();
         }
-
-
-
     }
-
 }

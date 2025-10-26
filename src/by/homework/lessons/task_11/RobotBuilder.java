@@ -24,19 +24,16 @@ public class RobotBuilder implements RobotEngener{
     @Override
     public void turnOn() {
         System.out.println(model+ " включен");
-
     }
 
     @Override
     public void turnOff() {
         System.out.println(model+ " выключен");
-
     }
 
     @Override
     public void uniquePossibility() {
         System.out.println(model+ " из "+ country+ " работает с помощью " +construction);
-
     }
 
     @Override

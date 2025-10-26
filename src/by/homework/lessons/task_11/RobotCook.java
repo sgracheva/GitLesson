@@ -1,6 +1,6 @@
 package by.homework.lessons.task_11;
 
-public class RobotCook implements Robot{
+public class RobotCook implements Robot {
     //РоботПовар поля: модель, потребляемая мощность, страна производитель,
     // агрегат для приготовления, включение робота (boolean isOn).
 
@@ -20,20 +20,16 @@ public class RobotCook implements Robot{
 
     @Override
     public void turnOn() {
-        System.out.println(model+ " включен");
-
-
+        System.out.println(model + " включен");
     }
 
     @Override
     public void turnOff() {
-        System.out.println(model+ " выключен");
-
+        System.out.println(model + " выключен");
     }
 
     @Override
     public void uniquePossibility() {
-        System.out.println(model + " из " +country+  " готовит еду с помощью "+ cook+ ".");
-
+        System.out.println(model + " из " + country + " готовит еду с помощью " + cook + ".");
     }
 }
