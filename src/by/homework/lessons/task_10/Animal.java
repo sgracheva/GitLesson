@@ -8,6 +8,7 @@ public class Animal {
     public Animal(String color, int maxlife, String food) {
     }
 
+
     public void sound() {
         System.out.println("Животное издает звук: ");
     }

@@ -58,6 +58,7 @@ public class Bird extends Animal {
         return color != null && color.equals(bird.color);
     }
 
+
     public int hashCode() {
         int result = familyBird.hashCode() + maxflight;
         return result;

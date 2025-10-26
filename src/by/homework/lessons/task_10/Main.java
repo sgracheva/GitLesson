@@ -14,6 +14,7 @@ public class Main {
         System.out.println(dog1.equals(dog2));
         System.out.println(bird1.equals(bird2));
 
+
         System.out.println(dog1.hashCode());
         System.out.println(dog2.hashCode());
         System.out.println(bird1.hashCode());

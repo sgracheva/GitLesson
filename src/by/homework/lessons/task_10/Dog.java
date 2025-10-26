@@ -12,6 +12,7 @@ public class Dog extends Animal {
         this.weight = weight;
     }
 
+
     public String getName() {
         return name;
     }
