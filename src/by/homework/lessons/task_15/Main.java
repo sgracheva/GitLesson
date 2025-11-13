@@ -53,7 +53,7 @@ public class Main {
 
     private static void printEmployees(Map<Employee, String> map) {
         for (Map.Entry<Employee, String> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + " | Профессия: " + entry.getValue());
+            System.out.println(entry.getKey() + " / Профессия: " + entry.getValue());
         }
     }
 }
