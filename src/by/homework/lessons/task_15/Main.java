@@ -30,7 +30,7 @@ public class Main {
         System.out.println("ЗП до повышения: ");
         printEmployees(employeeMap);
 
-        raiseSalary(employeeMap, "Экономист", 200);
+        increaseSalary(employeeMap, "Экономист", 200);
 
 
         System.out.println("ЗП после повышения: ");
@@ -39,17 +39,24 @@ public class Main {
 
     }
 
-    private static void raiseSalary(Map<Employee, String> employees, String profession, int amount) {
-        for (Map.Entry<Employee, String> entry : employees.entrySet()) {
-            Employee emp = entry.getKey();
-            String prof = entry.getValue();
-
-            if (prof.equals(profession)) {
-                int currentSalary = emp.getSalary();
-                emp.setSalary(currentSalary + amount); // увеличиваем зарплату
-            }
+//    private static void raiseSalary(Map<Employee, String> employees, String profession, int amount) {
+//        for (Map.Entry<Employee, String> entry : employees.entrySet()) {
+//            Employee emp = entry.getKey();
+//            String prof = entry.getValue();
+//
+//            if (prof.equals(profession)) {
+//                int currentSalary = emp.getSalary();
+//                emp.setSalary(currentSalary + amount); // увеличиваем зарплату
+//            }
+//        }
+//    }
+private static void raiseSalaryForProfession(Map<Employee, String> employees, String profession, int amountOfIncrease) {
+    for (Map.Entry<Employee, String> entry : employees.entrySet()) {
+        if (entry.getValue().equalsIgnoreCase(profession)) {
+            entry.getKey().increaseSalary(amountOfIncrease);
         }
     }
+}
 
     private static void printEmployees(Map<Employee, String> map) {
         for (Map.Entry<Employee, String> entry : map.entrySet()) {
