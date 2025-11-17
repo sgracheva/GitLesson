@@ -16,7 +16,6 @@ public class Bank {
             if (acc.getNumber().equals(accountNumber)) {
                 return acc;
             }
-
         }
         throw new AccountNotFoundException("Счет не найден ", "not.found.account");
     }

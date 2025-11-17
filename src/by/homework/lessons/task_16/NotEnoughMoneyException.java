@@ -19,4 +19,5 @@ public class NotEnoughMoneyException extends RuntimeException {
     public void setErrorCode(String errorCode) {
         this.errorCode = errorCode;
     }
+
 }
