@@ -8,6 +8,7 @@ public class Main {
         String original = "hello java";
         String result = toUpperCase.process(original);
 
+
         System.out.println("Исходная строка: " + original);
         System.out.println("После обработки: " + result);
     }

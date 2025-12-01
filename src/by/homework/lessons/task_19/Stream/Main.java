@@ -15,10 +15,12 @@ public class Main {
                 new City(7, "Minsk", 1996730, Continent.EUROPE)
         );
 
+
         cities.stream()
                 .filter(c -> c.getContinent() == Continent.EUROPE)
                 .max(Comparator.comparingInt(City::getPopulation))
                 .ifPresent(city -> System.out.println("Самый густонаселённый город в Европе: " + city));
+
 
 
                 cities.stream()
@@ -28,15 +30,18 @@ public class Main {
 
 
 
+
         cities.stream()
                 .max(Comparator.comparingInt(City::getPopulation))
                 .ifPresent(city -> System.out.println("Самый густонаселённый город в мире: " + city));
 
 
 
+
         cities.stream()
                 .min(Comparator.comparingInt(City::getPopulation))
                 .ifPresent(city -> System.out.println("Город с самым маленьким населением: " + city));
+
 
 
 
@@ -47,10 +52,12 @@ public class Main {
 
 
 
+
         System.out.println("Города с населением больше 1 млн:");
         cities.stream()
                 .filter(c -> c.getPopulation() > 1_000_000)
                 .forEach(System.out::println);
+
 
 
 
